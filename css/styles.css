@@ -32,7 +32,7 @@ img {
 
 body {
     font-family: Inter, Arial, Helvetica, sans-serif;
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 1.5;
     color: var(--color-body);
 }
@@ -859,14 +859,24 @@ nav.collapsible--expanded .nav__toggler {
     border-bottom: 1px solid #393939;
 }
 
+.footer__section .list {
+    margin: 0;
+}
+
 .footer__heading {
     text-transform: uppercase;
     font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 1.5;
 }
 
 .footer__brand {
     margin-top: 5rem;
     text-align: center;
+}
+
+.footer__brand img {
+    max-width: 230px;
 }
 
 .footer__copyright {
@@ -878,10 +888,6 @@ nav.collapsible--expanded .nav__toggler {
 @media screen and (min-width: 768px) {
     .footer__sections {
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    }
-
-    .footer__section .list {
-        margin: 0;
     }
 
     .footer .collapsible__chevron {
