@@ -26,6 +26,10 @@ html {
     font-size: 62.5%;
 }
 
+img {
+    width: 100%;
+}
+
 body {
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 2.4rem;
@@ -821,10 +825,6 @@ nav.collapsible--expanded .nav__toggler {
 }
 
 /* Showcase Block */
-.block-showcase__image>img {
-    width: 100%;
-}
-
 @media screen and (min-width: 768px) {
     .block-showcase .grid {
         grid-template-columns: 50% 50%;
@@ -833,12 +833,13 @@ nav.collapsible--expanded .nav__toggler {
     .block-showcase__image {
         justify-self: end;
     }
+
+    .block-showcase__image>img {
+        width: auto;
+        max-width: 700px;
+    }
 }
 
-.block-showcase__image>img {
-    width: auto;
-    max-width: 700px;
-}
 
 /* Footer */
 .footer {
