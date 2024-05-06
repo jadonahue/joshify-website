@@ -475,19 +475,17 @@ a {
 }
 
 .quote__author {
-    font-size: 3rem;
+    font-size: 2rem;
     font-style: normal;
-    font-weight: 600;
-    margin-left: -5px;
+    font-weight: 500;
     margin-bottom: 0;
 }
 
 .quote__company {
     color: var(--color-headings);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-style: normal;
-    margin-left: -5px;
-    opacity: .4;
+    opacity: 0.4;
 }
 
 .quote__line {
@@ -528,12 +526,17 @@ a {
 
 /* Testimonials */
 .testimonial {
-    padding: 8.5rem;
-    padding-top: 3rem;
+    padding: 3rem;
+}
+
+.testimonial .quote {
+    margin: 2rem 0;
+    font-size: 110%;
 }
 
 .testimonial__image {
     position: relative;
+    margin: 0 3rem;
 }
 
 .testimonial__image>img {
@@ -548,17 +551,14 @@ a {
 
 @media screen and (min-width: 768px) {
 
-    .testimonial {
-        padding: 3rem;
-    }
-
-    .testimonial .quote,
-    .testimonial .quote__author {
-        font-size: 2.4rem;
+    .testimonial__image {
+        margin: 0;
     }
 
     .testimonial .quote {
-        margin-left: 6rem;
+        margin: 5rem 0 0 6rem;
+        font-size: 120%;
+        line-height: 1.5;
     }
 }
 
@@ -637,7 +637,7 @@ a {
 
 /* Blocks */
 .block {
-    --padding-vertical: 6rem;
+    --padding-vertical: 5rem;
     padding: var(--padding-vertical) 2rem;
 }
 
